@@ -1,0 +1,7 @@
+<launch>
+  <!-- Load the configuration file -->
+  <rosparam command="load" file="$(find timestamps)/launch/config/parameters.yaml" />
+
+  <node pkg="timestamps" name="timestamps" type="timestamps" output="screen"/>
+
+</launch>
